@@ -24,7 +24,6 @@
   <aside id="sidebar" class="sidebar"></aside>
 
   <main>
-    <!-- CLEAN HOME FIRST -->
     <section id="homeScreen" class="home-screen">
       <div class="home-visual">
         <div class="home-glow"></div>
@@ -60,7 +59,6 @@
       </div>
     </section>
 
-    <!-- MENU AREA -->
     <section id="menuScreen" class="menu-screen hidden">
       <div class="menu-toolbar">
         <div>
@@ -94,13 +92,10 @@
   <button onclick="showInfo()">Info</button>
 </nav>
 
-
 <div id="itemModal" class="item-modal hidden" onclick="closeItemModal(event)">
   <div class="item-modal-card" onclick="event.stopPropagation()">
     <button class="modal-close" onclick="closeItemModal()">×</button>
-
     <div id="modalImage" class="modal-image"></div>
-
     <div class="modal-content">
       <div class="eyebrow">ALETHIA MENU</div>
       <h2 id="modalNameAr"></h2>
@@ -112,6 +107,7 @@
 </div>
 
 <script src="menu-data.js"></script>
+<script src="menu-final-patch.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
