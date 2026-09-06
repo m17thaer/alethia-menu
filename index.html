@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ALETHIA Digital Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand-wrap" onclick="showHome()">
+    <div class="brand">ALETHIA</div>
+    <div class="brand-sub">LOUNGE & MORE</div>
+  </div>
+
+  <div class="top-actions">
+    <button class="icon-btn" onclick="focusSearch()" aria-label="Search">⌕</button>
+    <button id="langBtn" class="lang-btn">AR / EN</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside id="sidebar" class="sidebar"></aside>
+
+  <main>
+    <!-- CLEAN HOME FIRST -->
+    <section id="homeScreen" class="home-screen">
+      <div class="home-visual">
+        <div class="home-glow"></div>
+        <div class="home-content">
+          <div class="eyebrow">ALETHIA · DIGITAL MENU</div>
+          <h1>ALETHIA</h1>
+          <h2>أكثر من مجرد مطعم</h2>
+          <p>اختار مزاجك، استكشف المنيو، وخلي الباقي علينا.</p>
+          <button class="primary-cta" onclick="openMenu()">استكشف المنيو</button>
+        </div>
+
+        <div class="home-meta">
+          <span>FOOD</span>
+          <span>DRINKS</span>
+          <span>GAMES</span>
+          <span>SHISHA</span>
+        </div>
+      </div>
+
+      <div class="home-cards">
+        <article onclick="openGroup('food')" class="home-card">
+          <div class="mini-index">01</div>
+          <div><b>FOOD</b><span>الأكل</span></div>
+        </article>
+        <article onclick="openGroup('drinks')" class="home-card">
+          <div class="mini-index">02</div>
+          <div><b>DRINKS</b><span>المشروبات</span></div>
+        </article>
+        <article onclick="openGroup('shisha')" class="home-card">
+          <div class="mini-index">03</div>
+          <div><b>SHISHA</b><span>الأراكيل</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MENU AREA -->
+    <section id="menuScreen" class="menu-screen hidden">
+      <div class="menu-toolbar">
+        <div>
+          <div class="eyebrow" id="tagline"></div>
+          <h2 id="menuTitle">المنيو</h2>
+        </div>
+        <input id="search" class="search" placeholder="ابحث عن آيتم...">
+      </div>
+
+      <section id="hero" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-copy">
+          <div class="eyebrow">ALETHIA MENU</div>
+          <h1 id="heroTitleEn"></h1>
+          <h2 id="heroTitleAr"></h2>
+        </div>
+      </section>
+
+      <section class="content">
+        <div id="mobileCats" class="mobile-cats"></div>
+        <div id="items" class="items"></div>
+      </section>
+    </section>
+  </main>
+</div>
+
+<nav class="mobile-nav">
+  <button onclick="showHome()">Home</button>
+  <button onclick="openMenu()">Menu</button>
+  <button onclick="focusSearch()">Search</button>
+  <button onclick="showInfo()">Info</button>
+</nav>
+
+
+<div id="itemModal" class="item-modal hidden" onclick="closeItemModal(event)">
+  <div class="item-modal-card" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeItemModal()">×</button>
+
+    <div id="modalImage" class="modal-image"></div>
+
+    <div class="modal-content">
+      <div class="eyebrow">ALETHIA MENU</div>
+      <h2 id="modalNameAr"></h2>
+      <div id="modalNameEn" class="modal-name-en"></div>
+      <div id="modalDescription" class="modal-description"></div>
+      <div id="modalPrice" class="modal-price"></div>
+    </div>
+  </div>
+</div>
+
+<script src="menu-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

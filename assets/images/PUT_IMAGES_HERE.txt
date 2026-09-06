@@ -1,0 +1,1 @@
+Place item and hero JPG images here using the exact filenames defined in menu-data.js.

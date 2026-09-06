@@ -1,0 +1,52 @@
+ALETHIA MENU — PRODUCTION QA REPORT
+
+Source: V90_BLUEBERRY_ICED_TEA
+Original size: 161.3 MB
+Production candidate size: 17.6 MB
+Reduction: 89.1%
+
+Completed:
+- Converted existing menu images to WebP for faster mobile loading.
+- Repaired image references where the file existed with a different extension.
+- Removed the editing guide from the production package.
+- Preserved the current HTML/CSS/JS/menu structure.
+
+QA:
+- Categories detected: 16
+- Items detected: 85
+- Missing image references remaining: 31
+
+IMPORTANT — These referenced images are still absent in V90 (unfinished content):
+- assets/images/akthar-love.jpg
+- assets/images/alak-mint.jpg
+- assets/images/alak.jpg
+- assets/images/alethia-mix.jpg
+- assets/images/caramel-frap.jpg
+- assets/images/cheese-burger.jpg
+- assets/images/classic-burger.jpg
+- assets/images/drinks-hero.jpg
+- assets/images/english-shisha.jpg
+- assets/images/fankr-cheese.jpg
+- assets/images/fankr.jpg
+- assets/images/frappuccino-hero.jpg
+- assets/images/hibiscus-iced-tea.jpg
+- assets/images/hummus-meat.jpg
+- assets/images/karkade-iced-tea.jpg
+- assets/images/lemon-iced-tea.jpg
+- assets/images/lemon-mint-shisha.jpg
+- assets/images/lemon-mix.jpg
+- assets/images/mexican.jpg
+- assets/images/mix-steak-salad.jpg
+- assets/images/mocha-frap.jpg
+- assets/images/mushroom-burger.jpg
+- assets/images/peach-iced-tea.jpg
+- assets/images/pepsi-seven.jpg
+- assets/images/pistachio-frap.jpg
+- assets/images/redbull.jpg
+- assets/images/shisha-hero.jpg
+- assets/images/smoke-burger.jpg
+- assets/images/special-shisha.jpg
+- assets/images/water.jpg
+- assets/images/wedges-cheese.jpg
+
+This package is a production CANDIDATE, not the final publish build until those missing images are completed.
