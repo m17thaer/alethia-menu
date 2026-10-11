@@ -303,6 +303,15 @@ window.ALETHIA_MENU = {
       "name_en": "Alethia Meals",
       "hero_image": "assets/images/alethia-meals-hero.webp",
       "items": [
+{
+  "id": "rizo",
+  "name_ar": "ريزو",
+  "name_en": "Rizo",
+  "price": 8000,
+  "image": "assets/images/rizo.webp",
+  "description_ar": "ريزو بصوص الريزو الخاص، بنكهة غنية ومميزة.",
+  "description_en": "Rizo served with our signature Rizo sauce, for a rich and flavorful taste."
+},
         {
           "id": "chicken-shawarma",
           "name_ar": "وجبة شاورما دجاج قطع ساندويش",
